@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenando os Valores</title>
+    <!-- Linkando arquivo JS -->
+    <script src="./exemplosjs/ordenando.js"></script>
+    <!-- Linkando Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<body style="margin: 20px;">
+    <header>
+        <h1>Ordenando Valores</h1>
+    </header>
+    <div >
+        <!-- Campo de entrada numérico -->
+        <label for="valor">Valor:</label><br>
+        <Input class="form-control" id="valor" name="valor" type= "number" placeholder="Digite um valor"><br>
+
+        <!-- Botão chamando função Add -->
+        <button class="btn btn-primary" type="button" onclick="add()">Adicionar</button><br>
+
+        <!-- Campo de seleção -->
+        <hr>
+            <select class="form-select" id = "campoDeSelecao" name="">
+                <option value="bubbleSort">Bubble Sort</option>
+                <option value="selectionSort">Selection Sort</option>
+                <option value="quickSort">Quick Sort</option>
+            </select><br>
+            <div style="display: flex;">
+                <button class="btn btn-primary" style="margin: 5px;" type="button" onclick="ordenar()">Ordenar</button><br>
+                <button class="btn btn-primary" style="margin: 5px;" type="button" onclick="misturar()">Misturar</button><br>
+            </div>
+        <hr>
+    </div>
+    <!-- LISTA A PREENCHER PELA FUNÇÃO -->
+    <ul id="valores"></ul>
+    <script>
+            function add(){
+                var valor = document.getElementById("valor").value;
+                var lista = document.getElementById("valores");
+                var node = document.createElement("li");
+                var textNode = document.createTextNode(valor);
+                node.appendChild(textNode);
+                lista.appendChild(node);
+                //valores.push(parseInt(valor));
+            }
+            // Função Ordenar
+            function ordenar(){
+                let vetorOrdenar = [];     
+                let collection = document.getElementById("valores").children;     
+                let text = "";     
+                for (let i = 0; i < collection.length; i++) {     
+                text += collection[i].textContent;     
+                vetorOrdenar.push(parseInt(collection[i].textContent, 10));     
+                }
+                var selecionado = document.getElementById("campoDeSelecao").value;
+                
+                if (selecionado == "bubbleSort") {
+                    let retornandoOrdenado = bubbleSort(vetorOrdenar);
+                    retornandoOrdenado.map((p, ind) => document.getElementsByTagName('li')[ind].innerHTML = p);
+                }
+                if (selecionado == "selectionSort") {
+                    let retornandoOrdenado = selectionSort(vetorOrdenar);
+                    retornandoOrdenado.map((p, ind) => document.getElementsByTagName('li')[ind].innerHTML = p);
+                }
+                if (selecionado == "quickSort") {
+                    let retornandoOrdenado = quickSort(vetorOrdenar);
+                    retornandoOrdenado.map((p, ind) => document.getElementsByTagName('li')[ind].innerHTML = p);
+                }
+            }
+            // Função Misturar
+            function misturar(){
+                let vetorMisturar = [];     
+                let collection = document.getElementById("valores").children;
+                let text = "";     
+                for (let i = 0; i < collection.length; i++) {   
+                text += collection[i].textContent;     
+                vetorMisturar.push(parseInt(collection[i].textContent, 10));
+                }
+                let retornandoMisturado = shuffle(vetorMisturar);
+                retornandoMisturado.map((p, ind) => document.getElementsByTagName('li')[ind].innerHTML = p);
+            }
+    </script>
+</body>
+</html>

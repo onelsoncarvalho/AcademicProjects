@@ -1,0 +1,39 @@
+# Arquivos específicos do IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Arquivos específicos do Visual Studio Code
+.vscode/
+
+# Arquivos específicos do Eclipse
+.classpath
+.project
+.settings/
+
+# Arquivos específicos do NetBeans
+nbproject/
+nbactions.xml
+
+# Arquivos específicos do Android Studio
+*.apk
+*.ap_
+*.dex
+*.pro
+*.so
+/captures/
+
+# Arquivos específicos do Xcode
+.DS_Store
+build/
+DerivedData/
+*.xcodeproj/
+*.xcworkspace/
+
+# Outros arquivos e pastas comumente ignorados
+node_modules/
+dist/
+build/
+target/
+*.log

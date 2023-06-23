@@ -1,0 +1,22 @@
+.row{
+    width: 99%;
+    height: 99%;
+    padding: 20px;
+}
+.card{
+    margin: 10px;
+}
+.card-Text{
+    text-justify:auto;
+    text-align: justify;
+}
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}

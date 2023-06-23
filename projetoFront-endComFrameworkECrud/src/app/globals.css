@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Adicionar aqui algum css adicional, para sobrescrever o Tailwind */
+body {
+  @apply bg-[#05a374]
+  max-h-[100vh]
+  text-gray-100;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 40px;
+}

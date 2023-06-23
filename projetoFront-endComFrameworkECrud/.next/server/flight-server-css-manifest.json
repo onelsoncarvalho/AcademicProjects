@@ -1,0 +1,26 @@
+{
+  "cssImports": {
+    "C:\\Users\\M4MB0\\Desktop\\projetoFront-endComFrameworkECrud\\src\\app\\layout.tsx": [
+      "C:\\Users\\M4MB0\\Desktop\\projetoFront-endComFrameworkECrud\\node_modules\\next\\font\\google\\target.css?{\"path\":\"src\\\\app\\\\layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}",
+      "C:\\Users\\M4MB0\\Desktop\\projetoFront-endComFrameworkECrud\\src\\app\\globals.css"
+    ],
+    "C:\\Users\\M4MB0\\Desktop\\projetoFront-endComFrameworkECrud\\src\\app\\todo\\page.tsx": [
+      "C:\\Users\\M4MB0\\Desktop\\projetoFront-endComFrameworkECrud\\node_modules\\react-toastify\\dist\\ReactToastify.css"
+    ]
+  },
+  "cssModules": {
+    "C:\\Users\\M4MB0\\Desktop\\projetoFront-endComFrameworkECrud\\src\\app\\page": [
+      "C:\\Users\\M4MB0\\Desktop\\projetoFront-endComFrameworkECrud\\src\\app\\globals.css",
+      "C:\\Users\\M4MB0\\Desktop\\projetoFront-endComFrameworkECrud\\node_modules\\next\\font\\google\\target.css?{\"path\":\"src\\\\app\\\\layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}"
+    ],
+    "C:\\Users\\M4MB0\\Desktop\\projetoFront-endComFrameworkECrud\\src\\app\\team\\page": [
+      "C:\\Users\\M4MB0\\Desktop\\projetoFront-endComFrameworkECrud\\src\\app\\globals.css",
+      "C:\\Users\\M4MB0\\Desktop\\projetoFront-endComFrameworkECrud\\node_modules\\next\\font\\google\\target.css?{\"path\":\"src\\\\app\\\\layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}"
+    ],
+    "C:\\Users\\M4MB0\\Desktop\\projetoFront-endComFrameworkECrud\\src\\app\\todo\\page": [
+      "C:\\Users\\M4MB0\\Desktop\\projetoFront-endComFrameworkECrud\\src\\app\\globals.css",
+      "C:\\Users\\M4MB0\\Desktop\\projetoFront-endComFrameworkECrud\\node_modules\\next\\font\\google\\target.css?{\"path\":\"src\\\\app\\\\layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}",
+      "C:\\Users\\M4MB0\\Desktop\\projetoFront-endComFrameworkECrud\\node_modules\\react-toastify\\dist\\ReactToastify.css"
+    ]
+  }
+}

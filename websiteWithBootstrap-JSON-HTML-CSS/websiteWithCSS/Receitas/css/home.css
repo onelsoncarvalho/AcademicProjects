@@ -1,0 +1,29 @@
+
+img.logo{
+    height: 50px;
+    width: 50px;
+}
+
+.container{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 300px;
+}
+
+.bemvindo{
+    Display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
